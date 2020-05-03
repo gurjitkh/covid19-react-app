@@ -8,7 +8,7 @@ export default function Header() {
           <h1 className="h1">Stay Home</h1>
         <img src={Dr} className="img" alt="logo"  width="150px"/>
       </section>
-      <Navbar/>
+     
       </div> 
     )
 }

@@ -9,7 +9,6 @@ import { fetchCountries } from '../../api';
      useEffect(() => {
          const fetchApi = async () => {
              setFetchedCountries(await fetchCountries());
-
          }
          fetchApi();
      }, [setFetchedCountries]);
@@ -17,7 +16,7 @@ import { fetchCountries } from '../../api';
     return (
         <FormControl className={styles.formControl}>
             <NativeSelect defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
-                <option value="global">Gloabal</option>
+                <option value="">Global</option>
                 {fetchedCountries.map((country, i) => <option key={i} value={country}>{country}</option>)}
             </NativeSelect>
         </FormControl>

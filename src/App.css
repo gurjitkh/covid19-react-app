@@ -38,9 +38,7 @@ section{
   background: url("images/virus.png");
 }
 .img{
-  position:absolute;
-  margin-left: 555px;
-  margin-top: 65px;
+  position: center;
   height: 20rem;
   width: 20rem;
   background-image: url('Drcorona.svg');

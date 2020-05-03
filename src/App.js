@@ -2,12 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import Dr from './Drcorona.svg'
 import './App.css';
-import Navbar from './components/Navbar';
 import {Cards, Chart, CountryPicker} from './components'
 import styles from './App.module.css'
 import {fetchData} from './api'
 
 class App extends React.Component {
+
 
   state = {
     data:{},
@@ -17,7 +17,6 @@ class App extends React.Component {
     const fetchedData = await fetchData();
 
     this.setState({ data:fetchedData });
-    
   }
   handleCountryChange = async (country) =>{
     const fetchedData = await fetchData(country);
@@ -44,8 +43,6 @@ class App extends React.Component {
         <Chart data={data} country={country}/>
       </div>  
     );
-  }
-    
+  }  
 } 
-
 export default App;
